@@ -1,9 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "bun run build",
+  "buildCommand": "npm run build",
   "functions": {
-    "api/[[...all]].js": {
+    "api/server.js": {
       "runtime": "nodejs20.x"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/server.js"
+    }
+  ]
 }
