@@ -2,7 +2,7 @@
   "version": 2,
   "buildCommand": "bun run build",
   "functions": {
-    "api/[...all].js": {
+    "api/[[...all]].js": {
       "runtime": "nodejs20.x"
     }
   }
